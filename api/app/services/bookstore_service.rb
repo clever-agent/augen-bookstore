@@ -28,7 +28,7 @@ class BookstoreService
             customer_address: params[:customer_address],
             cost: DeliveryCostFactor.calculate_cost(params[:delivery_type], params[:delivery_date])
         })
-        assign_success = DeliveryManager.assign_delivery(order_info.id, order_info.delivery_type)
+        assign_success = DeliveryService.assign_delivery(order_info.id, order_info.delivery_type)
         order_info.update({status: OrderStatus::DELIVERY_ASSIGNED}) if assign_success
     end
 

@@ -1,4 +1,4 @@
-class DeliveryManager
+class DeliveryService
     def self.assign_delivery order_id, delivery_type
         case delivery_type
         when DeliveryType::AIRCRAFT
