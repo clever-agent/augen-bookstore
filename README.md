@@ -34,21 +34,21 @@ npm run test
 ```
 ## 2. Design
 ### 2.1 Api
-- Is responsible for core business and expose Restful apis with Json
+- Is responsible for core business and expose Restful Apis returning Json
 - Use the idea of "fat model" and "skinny controller"
-- Apart from traditional Rails structure, we add a services layer to manage business logic
+- Apart from traditional Rails structure, we add a services layer to manage Business Logic
 - **BookManager service** 
 > Search book and buy book
 - **DeliveryManger service**
-> Communicate with 3rd Delivery service and assign delivery to book order
+> Communicates with 3rd Delivery service and assigns delivery to book order
 - **GoogleBook service** 
 > Is a specific book store implementation used in this demo. We can implement another one if needed.
 ### 2.2 Client
-- Responsible for rendering views and interact with users
+- Responsible for rendering views and interacting with users
 - **LandingPage component**
 > Supports search and display list of books
 - **DetailPoup component**
-> Display a selected book info and allow user to select Delivery date and Ship option. When user click 'Buy', Order Infos will be sent to api and save to database
+> Displays a selected book info and allow user to select Delivery date and Ship option. When user click 'Buy', Order Infos will be sent to api and saved to database
 
 ## 3. Time summary
 - Design: 1 hour
