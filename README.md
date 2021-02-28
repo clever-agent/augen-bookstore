@@ -40,7 +40,7 @@ npm run test
 - **Bookstore service** 
 > Search book and buy book
 - **Book service** 
-> Supports to search book
+> Supports to search book.
 > We use Factory Method to provide a more flexible way of creating a specific implemenation of Book library
 - **DeliveryManger service**
 > Communicates with 3rd Delivery service and assigns delivery to book order
