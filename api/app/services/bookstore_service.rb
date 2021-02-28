@@ -1,9 +1,10 @@
 require 'net/http'
 require 'json'
+require_relative "book/book_service"
 
-class BookManager
-    def search_book(text)
-        searched_books = GoogleBook.search text
+class BookstoreService
+    def self.search_book(text)
+        searched_books = BookService.search_book(text) 
         books = searched_books.map do |item|
             {
                 book_title: "#{item["volumeInfo"]["title"]}",
@@ -16,7 +17,7 @@ class BookManager
         books
     end
 
-    def buy_book(params)
+    def self.buy_book(params)
         order_info = OrderInfo.create({
             book_link: params[:book_link],
             book_title: params[:book_title],
@@ -30,4 +31,6 @@ class BookManager
         assign_success = DeliveryManager.assign_delivery(order_info.id, order_info.delivery_type)
         order_info.update({status: OrderStatus::DELIVERY_ASSIGNED}) if assign_success
     end
+
+    
 end

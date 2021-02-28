@@ -37,12 +37,13 @@ npm run test
 - Is responsible for core business and expose Restful Apis returning Json
 - Use the idea of "fat model" and "skinny controller"
 - Apart from traditional Rails structure, we add a services layer to manage Business Logic
-- **BookManager service** 
+- **Bookstore service** 
 > Search book and buy book
+- **Book service** 
+> Supports to search book
+> We use Factory Method to provide a more flexible way of creating a specific implemenation of Book library
 - **DeliveryManger service**
 > Communicates with 3rd Delivery service and assigns delivery to book order
-- **GoogleBook service** 
-> Is a specific book store implementation used in this demo. We can implement another one if needed.
 ### 2.2 Client
 - Responsible for rendering views and interacting with users
 - **LandingPage component**
