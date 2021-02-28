@@ -43,7 +43,7 @@ npm run test
 > Supports to search book.
 > We use Factory Method to provide a more flexible way of creating a specific implemenation of Book library
 - **Delivery service**
-> Communicates with 3rd Delivery service and assigns delivery to book order
+> Communicates with 3rd Delivery service and assigns delivery to BookOrder
 ### 2.2 Client
 - Responsible for rendering views and interacting with users
 - **LandingPage component**
