@@ -42,14 +42,14 @@ npm run test
 - **Book service** 
 > Supports to search book.
 > We use Factory Method to provide a more flexible way of creating a specific implemenation of Book library
-- **DeliveryManger service**
+- **Delivery service**
 > Communicates with 3rd Delivery service and assigns delivery to book order
 ### 2.2 Client
 - Responsible for rendering views and interacting with users
 - **LandingPage component**
 > Supports search and display list of books
 - **DetailPopup component**
-> Displays a selected book info and allow user to select Delivery Date and Shipping Option. When user click 'Buy', Order Infos will be sent to Api and saved to Database
+> Displays a selected book info and allows users to select Delivery Date and Shipping Option. When users click 'Buy', Order Infos will be sent to Api and saved to Database
 
 ## 3. Time summary
 - Design: 1 hour
