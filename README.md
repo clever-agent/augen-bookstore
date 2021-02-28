@@ -47,7 +47,7 @@ npm run test
 - Responsible for rendering views and interacting with users
 - **LandingPage component**
 > Supports search and display list of books
-- **DetailPoup component**
+- **DetailPopup component**
 > Displays a selected book info and allow user to select Delivery Date and Shipping Option. When user click 'Buy', Order Infos will be sent to Api and saved to Database
 
 ## 3. Time summary
