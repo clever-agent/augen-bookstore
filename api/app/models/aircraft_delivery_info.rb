@@ -1,0 +1,2 @@
+class AircraftDeliveryInfo < ApplicationRecord
+end

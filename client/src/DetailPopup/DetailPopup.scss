@@ -1,0 +1,66 @@
+.detail-popup{
+    button.buy-btn {
+        width: 200px;
+        margin: 0 auto 15px auto;
+    }
+
+    .book-info {
+        .book {
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+
+    .separator-line {
+        padding: 10px 0;
+    }
+
+    .order-info {
+        display: flex;
+        justify-content: space-around;
+        font-size: 15px;
+
+        .date-option{
+            padding-top: 10px;
+            input {
+                width: 120px;
+            }
+        }
+
+        .ship-option-container{
+            padding-top: 10px;
+        }
+
+        .ship-option{
+            display: flex;         
+            justify-content: space-between;
+
+            .ship {
+                margin: 0 6px 0 0;
+                padding: 2px 6px;
+                border-radius: 5px;
+                cursor: pointer;
+                color: seashell;
+            }
+
+            .selected{
+                border: solid 2px red;
+            }
+           
+            .motorbike {
+                background: green;
+                
+            }
+            .train {
+                background: blue;
+               
+            }
+            .aircraft {
+                background: purple;
+               
+            }
+        }
+    }
+}

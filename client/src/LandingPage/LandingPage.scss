@@ -1,0 +1,66 @@
+.landing-page {
+    padding: 30px 20px;
+    .search-div{
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+
+        input {
+            width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 25px;
+            border-radius: 10px;
+            border: none; /* <-- This thing here */
+             border:solid 1px #ccc;
+        }
+
+        input:focus {
+           
+           outline: none;
+        }
+
+        .search-icon {
+            width: 20px;
+            height: 20px;
+            background-image: url(../Images/search-icon-2.png);
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: -345px;
+            margin-bottom: -5px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        .search-icon:active {
+            transform: scale(1.2);
+        }
+    }
+
+    .book-container {
+        padding: 30px 10px 30px 50px;
+
+        .book-col{
+            margin: 0 5px;
+        }
+
+        .book {
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .book-title {
+                height: 50px;
+                margin: 10px 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    
+
+   
+}

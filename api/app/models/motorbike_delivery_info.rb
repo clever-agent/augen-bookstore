@@ -1,0 +1,2 @@
+class MotorbikeDeliveryInfo < ApplicationRecord
+end

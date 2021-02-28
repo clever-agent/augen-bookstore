@@ -1,0 +1,2 @@
+class TrainDeliveryInfo < ApplicationRecord
+end
