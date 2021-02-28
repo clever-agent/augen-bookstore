@@ -34,22 +34,23 @@ npm run test
 ```
 ## 2. Design
 ### 2.1 Api
-- Is responsible for core business and expose Restful Apis returning Json
-- Use the idea of "fat model" and "skinny controller"
-- Apart from traditional Rails structure, we add a services layer to manage Business Logic
+- Is responsible for core business and expose Restful Apis returning Json.
+- Use the idea of "fat model" and "skinny controller".
+- Apart from traditional Rails structure, we add a services layer to manage Business Logic.
 - **Bookstore service** 
-> Search book and buy book
+> Search book and buy book.
 - **Book service** 
 > Supports to search book.
-> We use Factory Method to provide a more flexible way of creating a specific implemenation of Book library
+> We use Factory Method to provide a more flexible way of creating a specific implemenation of Book library.
 - **Delivery service**
-> Communicates with 3rd Delivery service and assigns delivery to BookOrder
+> Communicates with 3rd Delivery service and assigns delivery to BookOrder.
+- We use rspec for backend tests. Tests are put in api/spec folder.
 ### 2.2 Client
-- Responsible for rendering views and interacting with users
+- Responsible for rendering views and interacting with users.
 - **LandingPage component**
-> Supports search and display list of books
+> Supports search and display list of books.
 - **DetailPopup component**
-> Displays a selected book info and allows users to select Delivery Date and Shipping Option. When users click 'Buy', Order Infos will be sent to Api and saved to Database
+> Displays a selected book info and allows users to select Delivery Date and Shipping Option. When users click 'Buy', Order Infos will be sent to Api and saved to Database.
 
 ## 3. Time summary
 - Design: 1 hour
