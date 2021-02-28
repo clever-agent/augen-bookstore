@@ -48,7 +48,7 @@ npm run test
 - **LandingPage component**
 > Supports search and display list of books
 - **DetailPoup component**
-> Displays a selected book info and allow user to select Delivery date and Ship option. When user click 'Buy', Order Infos will be sent to api and saved to database
+> Displays a selected book info and allow user to select Delivery Date and Shipping Option. When user click 'Buy', Order Infos will be sent to Api and saved to Database
 
 ## 3. Time summary
 - Design: 1 hour
