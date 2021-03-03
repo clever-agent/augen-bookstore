@@ -99,7 +99,7 @@ class DetailPopup extends Component {
   buy = () => {
     let params = {
       book_title: this.props.book.book_title,
-      book_link: this.props.book.book_title,
+      book_link: this.props.book.book_link,
       delivery_date: this.state.deliveryDate,
       delivery_type: this.state.deliveryType,
       customer_name: this.state.customerName,
