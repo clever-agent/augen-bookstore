@@ -15,12 +15,28 @@ docker-compose run web rake db:seed
 cd api
 docker-compose up
 ```
+
+**Notes**
+- Create docker network
+```
+docker network create postgres_default
+```
+- Example of a config database for postgres installed on host machine
+```
+username: postgres
+password: postgres
+host: host.docker.internal
+port: 5432
+```
+- You might need to remove Gemfile.lock
 ### 1.2 Run client
 ```
 cd client
 npm i
 npm run start
 ```
+**Notes**
+- You might need to remove package-lock.json
 ### 1.3 Run test
 - Api test
 ```
